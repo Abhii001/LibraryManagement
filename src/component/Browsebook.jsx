@@ -1,17 +1,14 @@
-import SearchBox from './Searchbox';
 import Book from './Book';
 import { v4 as uuidv4 } from 'uuid';
 
-function Booklist({ bookData, setFilteredBooks }) {
+function Browsebook({ bookData }) {
   if (!Array.isArray(bookData)) {
     return <p>No books available.</p>;
   }
 
   return (
     <>
-      <div>
-        <SearchBox setFilteredBooks={setFilteredBooks} />
-      </div>
+    <h1 className='font-bold text-center text-4xl'>All Books</h1>
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 m-8">
         {bookData.length > 0 ? (
           bookData.map((book) => (
@@ -25,4 +22,4 @@ function Booklist({ bookData, setFilteredBooks }) {
   );
 }
 
-export default Booklist;
+export default Browsebook;

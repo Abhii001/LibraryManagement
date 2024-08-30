@@ -33,10 +33,10 @@ function SearchBox({ setFilteredBooks }) {
                     onChange={handleInputChange}
                 />
             </div>
-            <div className="px-8 ">
+            <div className="px-8">
                 <button
                     onClick={handleSearch}
-                    className="outline-none px-4 py-2 rounded-lg shadow-lg bg-[#c412b5]"
+                    className="border-solid border-2 border-[#a29ba3] px-4 py-2 rounded-lg shadow-lg bg-[#c412b5]"
                 >
                     Search
                 </button>
