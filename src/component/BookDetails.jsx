@@ -1,14 +1,14 @@
 import { useParams } from 'react-router-dom';
 import { Books } from '../utilis/MockData';
 
+
 function BookDetails() {
     const { id } = useParams();
-    const bookId = Number(id);
+    const bookId = isNaN(Number(id)) ? null : Number(id);
     console.log(bookId)
-    const book = Books.find((book) => book.bookId === bookId);
-    console.log("Book found:", book);
-
-    if (!book) {
+    const book = Books?.find((book) => book?.number === bookId);
+    console.log(book)
+    if (!bookId || !book) {
         return <p>Book not found</p>;
     }
 

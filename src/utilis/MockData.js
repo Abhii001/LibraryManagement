@@ -80,3 +80,7 @@ export let Books = [
         index: 7
     }
 ]
+
+export function addBookToMockData(newBook) {
+    Books.push(newBook);
+}

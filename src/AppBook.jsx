@@ -29,7 +29,7 @@ function AppIndex() {
           element: <AddBooks />
         },
         {
-          path: "book/:id",
+          path: "books/:id",
           element: <BookDetails />
         }
       ],
@@ -52,7 +52,7 @@ function AppIndex() {
           element: <AddBooks />
         },
         {
-          path: "book/:id",
+          path: "books/:id",
           element: <BookDetails />
         }
       ],

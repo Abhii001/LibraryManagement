@@ -13,7 +13,7 @@ function Book({ bookDetails }) {
         <p>{bookDetails.originalTitle}</p>
       </div>
       <Link
-        to={`/book/${bookDetails.number}`}
+        to={`/books/${bookDetails.number}`}
         className="block text-center px-4 py-2 rounded-lg shadow-lg bg-[#c412b5] text-white"
       >
         View Book

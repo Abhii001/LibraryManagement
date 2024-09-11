@@ -9,7 +9,6 @@ function SearchBox({ setFilteredBooks }) {
             book.title.toLowerCase().includes(searchText.toLowerCase())
         );
         setFilteredBooks(filteredBooks);
-        setSearchText("");
     }
 
     function handleInputChange(e) {
